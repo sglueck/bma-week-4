@@ -1,6 +1,7 @@
 
 public class Main {
 	public static void main(String[] args) {
+		//testing static method functionality
 		String message = getHelloMessage();
 		System.out.println(message);
 	}
@@ -10,6 +11,5 @@ public class Main {
 	static String getHelloMessage() {
 		return helloMessage;
 	}
-
 }
 

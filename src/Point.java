@@ -1,10 +1,13 @@
 public class Point {
 	public static void main(String[] args) {
-		Point point = new Point();
-		point.x = 10;
-		point.y = 33;
+		Point point = new Point(10, 33);
 	}
 	
 	int x;
 	int y;
+	
+	Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
 }
