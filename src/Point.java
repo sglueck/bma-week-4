@@ -1,9 +1,4 @@
 public class Point {
-	public static void main(String[] args) {
-		Point point1 = new Point(10, 33);
-		Point point2 = new Point();
-	}
-	
 	int x;
 	int y;
 	
@@ -14,5 +9,19 @@ public class Point {
 	
 	Point() {
 		this(0, 0);
+	}
+	
+	public String toString() {
+		return "Point(x:"+x+", y:"+y+")";
+	}
+	
+	public static void main(String[] args) {
+		Point[] points = new Point[]{
+			new Point(10, 33),
+			new Point()
+		};
+		for( Point point : points ) {
+			System.out.println(point);
+		}
 	}
 }
