@@ -20,6 +20,15 @@ public class Point {
 			new Point(10, 33),
 			new Point()
 		};
+		System.out.println("Printing points array");
+		for( Point point : points ) {
+			System.out.println(point);
+		}
+		
+		Point aPoint = points[0];
+		aPoint.y = -255;
+		
+		System.out.println("Printing points array");
 		for( Point point : points ) {
 			System.out.println(point);
 		}
